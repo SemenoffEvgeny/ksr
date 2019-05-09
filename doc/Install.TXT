@@ -1,0 +1,27 @@
+Для работы проекта необходима установка JAVA JDK версии 1.8, которую можно скачать по ссылке: 
+https://www.oracle.com/technetwork/java/javase/downloads/2133151.
+На сайте нужно пройти процедуру регистрации. После установки JDK, её нужно также добавить в переменную PATH. 
+Подробная инструкция:
+	Для Windows: https://www.fandroid.info/ustanovka-jdk-java-development-kit/
+	Для Linux: https://zalinux.ru/?p=254
+	Для MacOS: https://docs.oracle.com/javase/8/docs/technotes/guides/install/mac_jdk.html
+
+Также необходимо установить сборщик проектов maven и также добавить в директорию PATH.
+Скачать его можно по ссылке: https://maven.apache.org/download.cgi
+Инструкция по установке: 
+	Для Windows: https://github.com/Flibberty-GEA/blog/wiki/03.a-Как-установить-Maven-на-Windows-10
+	Для Linux: https://linux-notes.org/ustanovka-maven-v-unix-linux/
+	Для MacOS: https://www.mkyong.com/maven/install-maven-on-mac-osx/
+
+Следующим шагом будет установка и настройка базы данных MySQL. 
+Скачать его можно тут (WINDOWS): https://dev.mysql.com/downloads/installer/.
+Инструкция Linux: http://linux.mixed-spb.ru/databases/mysql_setup.php
+MacOS: https://vivasart.com/lab/kak-pravilno-ustanovit-mysql-na-mac-osx
+
+При установке указкать: имя пользователя - admin, пароль - password. Все остальные параметры оставлять по умолчанию.
+
+*Опционально: при сборке проекта maven может ругаться на авторизацию через caching_sha2_password, 
+в таком случае в MySQL CL client необходимо выполнить команду:
+ALTER USER 'admin'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+
+ 
