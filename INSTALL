@@ -24,4 +24,4 @@ MacOS: https://vivasart.com/lab/kak-pravilno-ustanovit-mysql-na-mac-osx
 в таком случае в MySQL CL client необходимо выполнить команду:
 ALTER USER 'admin'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
 
- 
+После установки всех необходимых программных средств, для запуска приложения необходимо запустить файл run.bat. После перейти в браузере по адресу: localhost:8081
